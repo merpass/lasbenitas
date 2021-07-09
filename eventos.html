@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content=text/html, charset=UTF-8>
+	<link  rel="icon"   href="img/flav.png" type="image/ico" />
+	<title>Las Benitas Feria</title>
+    <link rel="stylesheet" type=text/css href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <div class="contenedor">
+    <header class='centrar'>
+        <nav class='menu'>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='galeria.html'>Galería</a></li>
+                <li><a href='expositores.html'>Expositores</a></li>
+                <li><a href='videos.html'>Videos</a></li>
+                <li><a href='eventos.html'>Póximas ferias</a></li>
+                <li><a href='contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+<main>        
+<div>
+    <h1>Próximas ferias del 2021</h1>
+    <h2><ol>
+        <li><span id=negrita>1 - Febrero - </span>sábado 6 y domingo 7</li>
+        <li><span id=negrita>2 - Marzo - </span>sábado 13 y domingo 14</li>
+        <li><span id=negrita>3 - Abril - </span>sábado 10 y domingo 15</li>
+        <li><span id=negrita>4 - Mayo - </span>sábado 8 y domingo 9</li>
+    </ol></h2>
+    <br><hr><br>
+           
+</div>
+<h2>Recordatorio para próximos eventos:</h2><br>
+<div>
+    <form id="recordatorio">
+    <label>Número de feria:</label> 
+    <input type="number" id="clave" min="1" placeholder="Número de feria"><br><br>       
+    <textarea name="anotaciones" id="anotaciones" rows="5" cols="25" placeholder="Escribe aquí tus anotaciones personales"></textarea><br><br>
+        <label>Opciones:</label>
+        <Select id="dia">
+            <option value = "sabado">Solo el sábado</option>
+            <option value = "domingo">Solo el domingo</option>
+            <option value = "ambas">Sábado y domingo</option>
+        </Select><br><br>
+        <label>Elegir fecha:</label>
+        <input type="date" id="fecha"><br><br>
+        <input type="button" name="grabar" id="guardar" value="Guardar recordatorio">
+        <input type="button" name="borrar" onclick="borrarTodo()" id="borrar" value="Borrar recordatorio">
+    </form>
+</div><br>
+<div id="mostrarDatos"></div>
+
+<footer>
+	<p id="foot">© Diseño 2020 María Mercedes Passano  - <span><em>para Las Benitas Feria</em></span>&nbsp;&nbsp;&nbsp;
+	<a href=mailto:mercedespassano@gmail.com>mercedespassano@gmail.com</p>
+</footer></div>
+
+<script src="js/storage.js" type="text/javascript"></script> 
+ 
+</body>
+</html>

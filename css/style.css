@@ -1,0 +1,393 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    width: 95%;
+    }
+h1{
+    font-size: 26px;
+    margin-top:15px;
+    margin-left:20px;
+    margin-bottom:15px;
+    }
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 14px;
+}
+
+p{
+    font-size: 12px;
+}
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.contact{
+    margin: 0 auto;
+    padding: 0.6em;
+    width: 50%;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
+    border-radius: 10px;
+    background-color: #efeff1;
+    
+   }
+.contact label{  
+    padding-top: 1em;
+    padding-left: 1em;
+    display: inline-block;
+    width: 20%;
+    }
+.contact input{  
+    padding: 0.4em;
+    display: inline-block;
+    width: 20%;
+    border-radius:5px; 
+    }
+#negrita{
+    font-weight: bold;
+    color:#357688;
+    font-size: 1em;
+}
+#comentarios{  
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-right: 3em;
+    margin-left: 3em;
+    border-radius:5px; 
+    } 
+#enviar{  
+    padding: 0.3em;
+    margin-left:3em;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+    background-color: #93deec;
+    border-radius:5px; 
+    } 
+#enviar:hover{
+    background-color: #ffffff;
+    font-style: italic;
+}
+#recordatorio{
+    margin: 0 auto;
+    padding: 0.6em;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #efeff1;
+    border-radius:5px; 
+}
+#anotaciones{  
+    
+    border-radius:5px; 
+    width: 93%;
+    } 
+
+#dia{
+    margin: 0 auto;
+    padding: 0.4em;
+    width: 30%;
+    border-radius:5px; 
+}
+#fecha{
+    margin: 0 auto;
+    padding: 0.4em;
+    width: 30%;
+    border-radius:5px; 
+}
+#guardar{
+    width: 35%;  
+    padding: 0.3em;
+    margin-left:3em;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+    background-color: #93deec;
+    border-radius:5px; 
+    } 
+#guardar:hover{
+    background-color: #ffffff;
+    font-style: italic;
+}
+#borrar{
+    width: 35%;  
+    padding: 0.3em;
+    margin-left:3em;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+    background-color: #93deec;
+    border-radius:5px; 
+    } 
+#borrar:hover{
+    background-color: #ffffff;
+    font-style: italic;
+}
+img{
+    width: 100%;
+    height: auto;}
+
+.imagen{
+    border-radius:50%;  
+}
+
+#ppal:hover{
+   filter: grayscale(100%);
+}
+
+.imagen:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #8b8b8b;
+    -webkit-box-shadow: 0px 0px 15px 15px  #8b8b8b;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);}
+
+footer {
+    width: 100%;
+    background-color: #e7e6e6;
+    clear: both;
+    float: none;
+    margin-top: 0.8em;
+    padding: 1em;
+    font-size: 12px;
+    }
+
+.centrar{
+    margin: 0 auto;
+    padding: 1em;
+}
+.contenedor-texto .titulo {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.contenedor-texto .expositor {
+    font-weight: bold;
+    color:#357688;
+    font-style: normal;
+}
+
+.menu{
+   width: 95%;
+   background:#93deec;
+   padding: .6em .6em;
+   border-radius: 10px;
+
+}
+.menu a{        
+   
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: .5em .5em;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: bold;
+    /*transición*/
+    transition: all 500ms ease;
+    color:#000000
+}
+.menu ul{
+    
+     /*flex*/
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.menu a:hover{
+    background:#357688;
+    border-radius: 15px;
+    color:#ffffff;
+}
+.menu li{
+    /*flex*/
+    flex:1 0 auto;
+    text-align: center;
+}
+
+.redes{
+    width: 1em;
+}
+.redes ul{
+    list-style-type: none;
+
+}
+.video{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+        
+    }
+.video ul{
+     /*flex*/
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.cards{
+     /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    background: #e7e6e6;
+    margin-left: auto;
+    margin-bottom: 1.3em;
+    width: 32%;
+    transition-property: background-color, color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.card a{
+    color:black;
+    text-decoration: none;
+}
+.card a:hover{
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+   
+}
+.card-cont{
+    padding:1.4em;
+    
+}
+.card-cont h2{
+    font-size: 18px;
+    margin-top:0;
+    margin-bottom: .5em;
+    font-weight: normal;
+    /*transition*/
+    transition:all .5s ease-in-out;
+}
+.card-cont p {
+    font-size: 14px;
+}
+figure{
+    margin: 0;
+}
+
+#logo{
+       width: 25%;
+       position:absolute;
+       z-index: 1;
+       top: 35%;
+       left : 40px;
+      
+   }
+
+#canvas{
+    width:6%;
+    }
+
+#div1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    }
+
+#div2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    background: #93deec;
+    }
+
+#blink {
+    margin-left: 100px;
+    display: block;
+    margin-bottom: 50px;
+   
+}
+
+  
+/*RESPONSIVE  tamaño menor a 710*/
+
+@media all and (max-width:710px){
+
+h1{
+    font-size: 14px;
+}
+h2{
+    font-size: 12px;
+}
+h3{
+    font-size: 10px;
+}
+p{
+    font-size: 8px;
+}
+
+.contenedor{
+    max-width: 710px;
+}
+label{  
+    width: 100%;
+    font-size: 8px;
+    }
+input{  
+    width: 100%;
+    font-size: 8px;
+    }
+textarea{ 
+    width: 70%; 
+    margin-top: 5px ;
+    margin-left:2em;
+    margin-bottom: 0.1em;
+    font-size: 8px;
+    } 
+footer {
+    font-size: 10px;
+    }
+    
+.menu a{        
+       
+    font-size: 14px;
+   
+    }
+ 
+.card-cont{
+    padding:1em;
+        
+    }
+.contact input{  
+    padding: 0.4em;
+    width: 100%;
+    }
+.contact label{  
+    
+    width: 100%;
+    }
+         
+#logo{
+    left : 10px;
+    top:20%;
+    }
+#comentarios{  
+width: 100%;
+    } 
+}
+
+       
+/*RESPONSIVE para el tamaño de 710 a 1023*/
+
+@media all and (min-width:710px) and  (max-width:1023px){
+    .centrar{
+        margin: auto;
+        padding: 1em;
+    }
+}
+

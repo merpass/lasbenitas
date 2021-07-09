@@ -1,0 +1,8 @@
+
+.svg-content {
+  width: 100%;
+  position: relative;
+  top:30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
